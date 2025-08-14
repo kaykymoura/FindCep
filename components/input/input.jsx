@@ -17,5 +17,14 @@ export const Input = () => {
 const styles = StyleSheet.create({
     campoInput:{
         width: "70%"
-    }
+    
+},
+ input:{
+    borderBottomWidth:1,
+    borderBottomColor: '#939393',
+    color: '#939393',
+    padding: 5,
+     outlineStyle: 'none'
+ }
 })
+
