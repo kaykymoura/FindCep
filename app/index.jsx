@@ -1,7 +1,8 @@
-import { Text, View, StyleSheet, ImageBackground, Image } from "react-native";
+import { Text, View, StyleSheet, ImageBackground, Image, ScrollView } from "react-native";
 import { Input } from "../components/input/input";
 import { Botao } from "../components/botao/botao";
 import { Card } from "../components/card/card";
+
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
         <Image source={require('../assets/images/LogoFindCEP.png')} style={styles.logo}></Image>
       </ImageBackground>
       {/* 2- {campo de consulta} */}
+      <ScrollView style={styles.containerScroll}>
       <View style={styles.container}>
         {/* 2.1- {titulo} */}
         <Text style={styles.titulo}>Consulte seu CEP</Text>
@@ -22,6 +24,7 @@ export default function Index() {
       {/* 2.4- {Card de informacoes} */}
       <Card  card="Informações do CEP" />
       </View>
+      </ScrollView>
 
     </>
   );
@@ -34,18 +37,24 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    height: "100%",
+    height: "500",
   },
   logo: {
     width: 100,
     height: 120
   },
   container: {
-    flex: 1.5,
-    alignItems: "center",
-    paddingTop: 50,
-    paddingBottom: 50,
     gap: 40,
+    width: "100%",
+    minHeight: "100%",
+    alignItems: "center",
+    
+  },
+  containerScroll: {
+    flex: 1.5,
+    paddingTop: 50,
+    height: "100%",
+    paddingBottom: 60,
   },
   titulo: {
     fontSize: 25,

@@ -4,30 +4,31 @@ export const Card = ({ card }) => {
     return (
         <ScrollView style={styles.card} showsVerticalScrollIndicator={false}>
             <Text>{card}</Text>
-            <View>
-                <Text>CEP:</Text>
-                <Text>Dado 01:</Text>
+            <View style={styles.textos}>
+                <Text style={styles.tituloValor}>CEP:</Text>
+                <Text style={styles.Valor}>Dado 01:</Text>
             </View>
-            <View>
-                <Text>Logradouro:</Text>
-                <Text>Dado 02:</Text>
+            <View style={styles.textos}>
+                <Text style={styles.tituloValor}>Logradouro:</Text>
+                <Text style={styles.Valor}>Dado 02:</Text>
             </View>
-            <View>
-                <Text>Bairro:</Text>
-                <Text>Dado 03:</Text>
+            <View style={styles.textos}>
+                <Text style={styles.tituloValor}>Bairro:</Text>
+                <Text style={styles.Valor}>Dado 03:</Text>
             </View>
-            <View>
-                <Text>UF:</Text>
-                <Text>Dado 04:</Text>
+            <View style={styles.textos}>
+                <Text style={styles.tituloValor}>UF:</Text>
+                <Text style={styles.Valor}>Dado 04:</Text>
             </View>
-            <View>
-                <Text>Estado:</Text>
-                <Text>Dado 05:</Text>
+            <View style={styles.textos}>
+                <Text style={styles.tituloValor}>Estado:</Text>
+                <Text style={styles.Valor}>Dado 05:</Text>
             </View>
-            <View>
-                <Text>Região:</Text>
-                <Text>Dado 06:</Text>
+            <View style={styles.textos}>
+                <Text style={styles.tituloValor}>Região:</Text>
+                <Text style={styles.Valor}>Dado 06:</Text>
             </View>
+             
         </ScrollView>
     );
 }
@@ -35,8 +36,20 @@ export const Card = ({ card }) => {
 const styles = StyleSheet.create({
     card: {
         width: "70%",
-        height: "100%",
+        minHeight: "40%",
         padding: 20,
         boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-    }
+        borderRadius: 7,
+        gap: 20,
+    
+},
+tituloValor: {
+    fontWeight: 600
+},
+Valor: {
+    fontWeight: 400
+},
+   textos: {
+    marginBottom: 10,
+   }
 });
