@@ -1,32 +1,32 @@
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 
-export const Card = ({ card }) => {
+export const Card = ({ card, cep, logradouro, bairro, uf, estado, regiao }) => {
     return (
         <ScrollView style={styles.card} showsVerticalScrollIndicator={false}>
             <Text>{card}</Text>
             <View style={styles.textos}>
                 <Text style={styles.tituloValor}>CEP:</Text>
-                <Text style={styles.Valor}>Dado 01:</Text>
+                <Text style={styles.Valor}>{cep}</Text>
             </View>
             <View style={styles.textos}>
                 <Text style={styles.tituloValor}>Logradouro:</Text>
-                <Text style={styles.Valor}>Dado 02:</Text>
+                <Text style={styles.Valor}>{logradouro}</Text>
             </View>
             <View style={styles.textos}>
                 <Text style={styles.tituloValor}>Bairro:</Text>
-                <Text style={styles.Valor}>Dado 03:</Text>
+                <Text style={styles.Valor}>{bairro}</Text>
             </View>
             <View style={styles.textos}>
                 <Text style={styles.tituloValor}>UF:</Text>
-                <Text style={styles.Valor}>Dado 04:</Text>
+                <Text style={styles.Valor}>{uf}</Text>
             </View>
             <View style={styles.textos}>
                 <Text style={styles.tituloValor}>Estado:</Text>
-                <Text style={styles.Valor}>Dado 05:</Text>
+                <Text style={styles.Valor}>{estado}</Text>
             </View>
             <View style={styles.textos}>
                 <Text style={styles.tituloValor}>Região:</Text>
-                <Text style={styles.Valor}>Dado 06:</Text>
+                <Text style={styles.Valor}>{regiao}</Text>
             </View>
              
         </ScrollView>

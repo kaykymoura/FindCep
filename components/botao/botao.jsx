@@ -1,9 +1,9 @@
 import React from "react";
 import { Pressable, Text, StyleSheet } from "react-native";
 
-export const Botao = ({ tituloBotao }) => {
+export const Botao = ({ tituloBotao, onPress }) => {
   return (
-    <Pressable style={styles.botao}>
+    <Pressable style={styles.botao} onPress={onPress}>
       <Text style={styles.textoBotao}>
         {tituloBotao}
       </Text>
