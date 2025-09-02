@@ -1,50 +1,42 @@
-# Welcome to your Expo app 👋
+# 🔎 FindCep
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+O **FindCep** é uma aplicação web que permite consultar endereços a partir do **CEP**, consumindo a API pública [ViaCEP](https://viacep.com.br).  
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Tecnologias
+- React  
+- JavaScript  
+- HTML5 & CSS3  
+- API ViaCEP  
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 📌 Funcionalidades
+- Buscar endereço pelo CEP  
+- Exibir logradouro, bairro, cidade e estado  
+- Layout simples e responsivo  
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+## ⚙️ Como executar
 ```bash
-npm run reset-project
-```
+# Clonar o repositório
+git clone https://github.com/kaykymoura/findcep.git
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Acessar a pasta
+cd findcep
 
-## Learn more
+# Instalar dependências
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
+# Rodar o projeto
+npm run dev
+O app estará rodando em: http://localhost:5173
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+👤 Desenvolvido por Kayky Moura
 
-## Join the community
+css
+Copiar código
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Quer que eu faça esse básico também para os outros projetos do seu portfólio, tipo **EventPlus** e **Biblioteca**?
