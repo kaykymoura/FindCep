@@ -36,7 +36,4 @@ O app estará rodando em: http://localhost:5173
 
 👤 Desenvolvido por Kayky Moura
 
-css
-Copiar código
 
-Quer que eu faça esse básico também para os outros projetos do seu portfólio, tipo **EventPlus** e **Biblioteca**?
